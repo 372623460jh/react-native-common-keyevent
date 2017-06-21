@@ -44,14 +44,14 @@ KeyEvent.prototype = {
         //修改静态属性改变处于激活状态的KeyController组件ID
         this.state ? KeyEvent.nowActiveClass = this._KeyBaseId : KeyEvent.nowActiveClass = "";
     }
-}
+};
 
 /**
  * 工厂模式实例化对象的构建方法
  */
 KeyEvent.initKeyEvent = function (obj) {
     return new KeyEvent(obj);
-}
+};
 
 /**
  * 当前处于激活状态的KeyController组件ID，""为没有当前没有处于激活状态的组件
@@ -93,7 +93,7 @@ KeyEvent.keyUpEventAndroid = DeviceEventEmitter.addListener('KeyUp', function (k
         DeviceEventEmitter.emit(KeyEvent.nowActiveClass + 'KeyUp', keyCode);
         //当按键按下抬起间隔<2000ms >30ms时触发press事件
         if (KeyEvent.keyCodeStack[keyCode + ""]) {
-            var dTime = new Date().getTime() - KeyEvent.keyCodeStack[keyCode + ""];
+            let dTime = new Date().getTime() - KeyEvent.keyCodeStack[keyCode + ""];
             if (dTime > 30 && dTime < 2000) {
                 //触发Press事件
                 KeyEvent.keyPressEventAndroid(keyCode);
