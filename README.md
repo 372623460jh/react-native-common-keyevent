@@ -4,7 +4,7 @@
 
 - 目前开发者本人的主要使用场景是Android-TV端获取遥控器的按键事件。
 
-[GitHub地址:](https://github.com/372623460jh/react-native-common-keyevent).
+- GitHub地址:[https://github.com/372623460jh/react-native-common-keyevent](https://github.com/372623460jh/react-native-common-keyevent).
 
 ### 安装
 
