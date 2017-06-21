@@ -112,6 +112,4 @@ KeyEvent.keyPressEventAndroid = function (keyCode) {
     }
 };
 
-export default {
-    KeyEvent:KeyEvent
-};
+export default KeyEvent;
