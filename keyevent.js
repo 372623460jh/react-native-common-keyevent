@@ -42,7 +42,7 @@ KeyEvent.prototype = {
     updateState: function (isActive) {
         this.state = isActive;
         //修改静态属性改变处于激活状态的KeyController组件ID
-        this.state ? KeyEvent.nowActiveClass = this._KeyBaseId : KeyEvent.nowActiveClass = "";
+        this.state ? KeyEvent.nowActiveClass = this._KeyBaseId : null;
     }
 };
 
