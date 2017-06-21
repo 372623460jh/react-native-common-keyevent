@@ -1,6 +1,6 @@
 {
   "name": "react-native-common-keyevent",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "keyevent.js",
   "description": "为使RN能满足TV端遥控器需求,获取Android原生键盘事件封装的RN键盘事件类",
   "keywords": [
